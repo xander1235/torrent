@@ -7,6 +7,10 @@ import (
 )
 
 func NewClient(config ClientConfig) ClientModel {
+	if config.ClientConfig == nil {
+		config.ClientConfig = torrent.NewDefaultClientConfig()
+		config.ClientConfig.DataDir = config.DataDir
+	}
 	c, err := torrent.NewClient(config.ClientConfig)
 	if err != nil {
 		panic("error on create new torrent client")

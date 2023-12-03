@@ -9,6 +9,7 @@ import (
 type ClientConfig struct {
 	*torrent.ClientConfig
 	TickerDuration time.Duration
+	DataDir string
 }
 
 type Client struct {

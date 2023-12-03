@@ -1,4 +1,4 @@
-module github.com/aliworkshop/torrent
+module github.com/xander1235/torrent
 
 go 1.18
 

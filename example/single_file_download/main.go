@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"github.com/aliworkshop/torrent"
+	"github.com/xander1235/torrent"
 	"golang.org/x/sync/errgroup"
 	"log"
 	"time"
